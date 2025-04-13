@@ -21,3 +21,5 @@ gsap.registerPlugin(ScrollTrigger);
       ease: "power3.out"
     });
   });
+
+  
