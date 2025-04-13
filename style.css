@@ -295,7 +295,7 @@
     /* form*/
          
     .collaboration-section {
-      background-color: #ebebeb; /* Vibrant lime green */
+      background-color: #000; /* Vibrant lime green */
       border-radius: 0px;
       width: 100%;
       max-width: 1200px;
@@ -332,7 +332,7 @@
   
   .contact-info p {
       font-size: 14px;
-      color: #333;
+      color: #fff;
       line-height: 1.5;
   }
   
@@ -348,12 +348,12 @@
       font-size: 18px;
       font-weight: 600;
       margin-bottom: 15px;
-      color: #333;
+      color: #fff;
   }
   
   .cta-button {
-      background-color: #000;
-      color: #fff;
+      background-color: #fff;
+      color: #000;
       border: none;
       border-radius: 30px;
       padding: 10px 24px;
@@ -382,7 +382,7 @@
   
   .address-info p {
       font-size: 14px;
-      color: #333;
+      color: #fff;
       line-height: 1.5;
   }
   
@@ -396,7 +396,7 @@
       font-weight: 900;
       text-transform: uppercase;
       line-height: 0.9;
-      color: #000;
+      color: #fff;
       margin-top: 50px;
       text-align: center;
       letter-spacing: -2px;
@@ -407,7 +407,7 @@
       justify-content: space-between;
       margin-top: 40px;
       font-size: 12px;
-      color: #333;
+      color: #fff;
   }
   
   .footer-left {
@@ -420,7 +420,7 @@
   }
   
   .footer-right a {
-      color: #333;
+      color: #fff;
       text-decoration: none;
   }
   
@@ -436,7 +436,7 @@
       width: 24px;
       height: 24px;
       border-radius: 50%;
-      background-color: #000;
+      background-color: #;
       color: #c2fd00;
       text-decoration: none;
   }
@@ -447,11 +447,10 @@
       max-width: 100%;
       margin-left: auto;
       margin-right: auto;
-      padding: 0px;
-      background-color: rgba(255, 255, 255, 0.2);
-      border-radius: 16px;
-      border: 1px solid rgba(255, 255, 255, 0.3);
-      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
+      padding: 5px;
+      background-color: ;
+      
+      
   }
   
   .form-title {
@@ -459,7 +458,7 @@
       margin-bottom: 30px;
       font-weight: 700;
       font-size: 24px;
-      color: #000;
+      color: #fff;
   }
   
   .form-grid {
@@ -480,7 +479,7 @@
       display: block;
       margin-bottom: 8px;
       font-weight: 500;
-      color: #000;
+      color: #fff;
       font-size: 14px;
   }
   
@@ -493,7 +492,7 @@
       background-color: rgba(255, 255, 255, 0.7);
       border-radius: 8px;
       font-size: 14px;
-      color: #333;
+      color: #fff;
       transition: all 0.3s;
   }
   
