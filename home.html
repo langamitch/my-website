@@ -1,44 +1,148 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Homepage</title>
-  <link rel="stylesheet" href="CSS/home.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kitchen Showroom</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="home.css"/>
+  <link rel="stylesheet" href="style.css"/>
+ 
 </head>
-<body>
-  <header>
-    <div class="nav">
-      <div class="logo">Wandile Langa</div>
-      <nav>
-        <a href="#">Index</a>
-        <a href="#">About</a>
+<div class="top">
+
+ 
+    <header class="header">
+      <div class="name-role">
+        <p class="name">Wandile Langa</p>
+        <p class="role">Interaction Designer & Creative Developer</p>
+      </div>
+      <nav class="nav">
+        <a href="home.html">Index</a>
+        <a href="about.html">About</a>
       </nav>
+    </header>
+   </div>
+
+<body>
+  <div id="section1" class="kitchen-section">
+    <img src="images/kitchen" alt="Modern kitchen showroom with sleek cabinets" class="kitchen-image">
+    <div class="kitchen-overlay">
+      <p class="subtitle">Kitchen showroom</p>
+      <h1 class="title">Scavolini sthlm</h1>
+      <div class="arrow-button">
+        <span class="arrow-icon">→</span>
+      </div>
     </div>
-  </header>
+  </div>
+  
+  <div id="section2" class="kitchen-section">
+    <img src="/api/placeholder/800/500" alt="Minimalist kitchen design" class="kitchen-image">
+    <div class="kitchen-overlay">
+      <p class="subtitle">Premium Design</p>
+      <h1 class="title">Modern Elegance</h1>
+      <div class="arrow-button">
+        <span class="arrow-icon">→</span>
+      </div>
+    </div>
+  </div>
+  
+  <div id="section3" class="kitchen-section">
+    <img src="/api/placeholder/800/500" alt="Luxury kitchen materials" class="kitchen-image">
+    <div class="kitchen-overlay">
+      <p class="subtitle">Finest Materials</p>
+      <h1 class="title">Crafted Perfection</h1>
+      <div class="arrow-button">
+        <span class="arrow-icon">→</span>
+      </div>
+    </div>
+  </div>
+  
+  <div id="section4" class="kitchen-section">
+    <img src="/api/placeholder/800/500" alt="Kitchen with island" class="kitchen-image">
+    <div class="kitchen-overlay">
+      <p class="subtitle">Smart Solutions</p>
+      <h1 class="title">Functional Beauty</h1>
+      <div class="arrow-button">
+        <span class="arrow-icon">→</span>
+      </div>
+    </div>
+  </div>
+  
+  <div id="section5" class="kitchen-section">
+    <img src="/api/placeholder/800/500" alt="Custom kitchen designs" class="kitchen-image">
+    <div class="kitchen-overlay">
+      <p class="subtitle">Your Vision</p>
+      <h1 class="title">Custom Creation</h1>
+      <div class="arrow-button">
+        <span class="arrow-icon">→</span>
+      </div>
+    </div>
+  </div>
 
-  <main>
-    <section class="hero">
-        <img src="Images/kitchen.jpg" alt="Synthetic Theatre" class="hero-img" />
-        <div class="overlay-text">
-          <p class="small-text">Generative AI Experiment</p>
-          <h1>Synthetic<br>Theatre</h1>
-          <button class="cta-button">→</button>
-        </div>
-      </section>
-
-      <section class="hero">
-        <img src="image1.jpg" alt="Synthetic Theatre" class="hero-img" />
-        <div class="overlay-text">
-          <p class="small-text">Generative AI Experiment</p>
-          <h1>Synthetic<br>Theatre</h1>
-          <button class="cta-button">→</button>
-        </div>
-      </section>
-  </main>
-
-  <footer>
-    <p>andreasantonsson.dev</p>
-  </footer>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      // Initialize GSAP ScrollTrigger
+      gsap.registerPlugin(ScrollTrigger);
+      
+      // Select all sections
+      const sections = document.querySelectorAll('.kitchen-section');
+      
+      sections.forEach((section, index) => {
+        // Create animation timeline for each section
+        const tl = gsap.timeline({
+          scrollTrigger: {
+            trigger: section,
+            start: "top 80%",
+            end: "bottom top",
+            toggleActions: "play none none reverse"
+          }
+        });
+        
+        // Add animations to timeline
+        tl.fromTo(section.querySelector('.subtitle'), 
+          { y: 30, opacity: 0 }, 
+          { y: 0, opacity: 1, duration: 0.8, ease: "power2.out" }
+        )
+        .fromTo(section.querySelector('.title'), 
+          { y: 50, opacity: 0 }, 
+          { y: 0, opacity: 1, duration: 1, ease: "power2.out" }, 
+          "-=0.6"
+        )
+        .fromTo(section.querySelector('.arrow-button'), 
+          { opacity: 0, scale: 0.8 }, 
+          { opacity: 1, scale: 1, duration: 0.5, ease: "back.out(1.7)" }, 
+          "-=0.4"
+        );
+        
+        // Add parallax effect to images
+        gsap.to(section.querySelector('.kitchen-image'), {
+          y: 50,
+          ease: "none",
+          scrollTrigger: {
+            trigger: section,
+            start: "top bottom",
+            end: "bottom top",
+            scrub: true
+          }
+        });
+      });
+      
+      // Add hover animation for arrow buttons
+      const arrowButtons = document.querySelectorAll('.arrow-button');
+      
+      arrowButtons.forEach(button => {
+        button.addEventListener('mouseenter', () => {
+          gsap.to(button, { scale: 1.1, duration: 0.3, ease: "power1.out" });
+        });
+        
+        button.addEventListener('mouseleave', () => {
+          gsap.to(button, { scale: 1, duration: 0.3, ease: "power1.out" });
+        });
+      });
+    });
+  </script>
 </body>
 </html>
