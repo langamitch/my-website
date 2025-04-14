@@ -126,7 +126,7 @@
     transform: translateX(-50%);
     width: 50px;
     height: 50px;
-    background-color: #222;
+    background-color: #000;
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -137,7 +137,7 @@
   }
   
   .arrow-button:hover {
-    background-color: #444;
+    background-color: #bebebe;
   }
   
   .arrow-icon {
@@ -158,7 +158,7 @@
   
   @media (max-width: 768px) {
     .kitchen-section {
-      width: 95%;
+      width: 100%;
       height: auto;
     }
     .title {
@@ -168,7 +168,7 @@
   
   @media (max-width: 480px) {
     .kitchen-section {
-      height: 40vh;
+      height: 35vh;
     }
     .subtitle {
       font-size: 1rem;
@@ -179,9 +179,35 @@
     .arrow-button {
       width: 40px;
       height: 40px;
+      margin-top:15px;
     }
-    .role {
-      font-size: 13px;
+    .name-role .role {
+      font-size: 10px;
     
     }
+    .nav{
+      margin-right:-30px;
+    }
   }
+
+  .bottom-corner {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    color: white;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    text-align: left;
+    z-index: 9999;
+  }
+  
+  .label-name {
+    font-weight: bold;
+    font-size: 16px;
+  }
+  
+  .current-month {
+    opacity: 0.7;
+    font-size: 14px;
+  }
+  
