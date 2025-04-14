@@ -1,0 +1,98 @@
+/* style.css */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background: #000;
+    color: white;
+    font-family: 'Helvetica Neue', sans-serif;
+  }
+  
+  header {
+    padding: 20px;
+  }
+  
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  nav a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #ccc;
+  }
+  
+  .hero {
+    position: relative;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .hero1 {
+    background-image: url('your-image-1.jpg'); /* Replace with your own image */
+  }
+  
+  .hero2 {
+    background-image: url('your-image-2.jpg'); /* Replace with your own image */
+  }
+  
+  .overlay-text {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 40px;
+    border-radius: 10px;
+  }
+  
+  .small-text {
+    text-transform: uppercase;
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  
+  h1 {
+    font-size: 3rem;
+    line-height: 1.2;
+  }
+  
+  .cta-button {
+    margin-top: 20px;
+    font-size: 2rem;
+    background: none;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .availability {
+    font-size: 1.5rem;
+    text-align: left;
+    margin: 40px;
+  }
+  
+  footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+    color: #ccc;
+  }
+  
+  @media screen and (min-width: 768px) {
+    h1 {
+      font-size: 5rem;
+    }
+  
+    .overlay-text {
+      padding: 60px;
+    }
+  }
+  
