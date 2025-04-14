@@ -35,6 +35,7 @@
     z-index: 999;
   }
   .name-role p {
+    
     font-weight: 500;
     font-size: 13px;
     font-style: normal;
@@ -188,6 +189,7 @@
     .nav{
       margin-right:-30px;
     }
+    
   }
 
   .bottom-corner {
