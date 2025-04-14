@@ -22,16 +22,4 @@ gsap.registerPlugin(ScrollTrigger);
     });
   });
 
-  gsap.registerPlugin(ScrollTrigger);
-
-// Move overlay faster than the image as user scrolls
-gsap.to(".kitchen-overlay", {
-  y: -200, // how much faster it moves (can adjust)
-  ease: "none",
-  scrollTrigger: {
-    trigger: "#section1",
-    start: "top center",  // when section top hits center of viewport
-    end: "bottom top",    // when section bottom hits top of viewport
-    scrub: true,
-  }
-});
+  
