@@ -24,10 +24,7 @@ gsap.registerPlugin(ScrollTrigger);
 
   
   const monthElement = document.getElementById("dynamic-month");
-  const date = new Date();
-  const monthNames = [
-    "January", "February", "March", "April", "May", "June",
-    "July", "August", "September", "October", "November", "December"
-  ];
-  monthElement.textContent = monthNames[date.getMonth()];
-
+  const now = new Date();
+  const shortMonth = now.toLocaleString('default', { month: 'short' }); // "Apr"
+  const year = now.getFullYear();
+  monthElement.textContent = `${shortMonth} ${year}`;
