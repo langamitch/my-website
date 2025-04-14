@@ -1,42 +1,89 @@
 @font-face{
-    font-family: 'Wandile';
-    src: url('fonts/wandil.woff') format('woff');
-    src: url('fonts/wandile.woff2') format('woff2');
-    font-weight: normal;
-    font-style: normal;
-  }
-
-  * {
+  font-family: 'Wandile';
+  src: url('fonts/wandil.woff') format('woff');
+  src: url('fonts/wandile.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
   }
-  
+  html {
+    scroll-behavior: smooth;
+  }
   body {
     font-family: 'Inter', sans-serif;
-    background-color: #000;
+    background: #000;
     color: #fff;
-    overflow-x: hidden;
+    padding: 1.3rem;
   }
   
+  .header {
+    mix-blend-mode: difference;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 2rem;
+    
+  }
+  .top {
+    position: fixed;
+    width:100%;
+    padding-right: 70px;
+    z-index: 999;
+  }
+  .name-role p {
+    font-weight: 600;
+    font-size: 13px;
+    font-style: normal;
+    line-height: 20px;
+  }
+  
+  
+  .nav a {
+    font-weight: 500;
+    font-size: 13px;
+    font-style: normal;
+    margin-left: 1rem;
+    text-decoration: none;
+    color: #444;
+    line-height:20px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .nav a:hover {
+    text-decoration: underline;
+    color: #000;
+    transition: all 0.3s ease-in-out;
+  }
+
   .kitchen-section {
     position: relative;
     width: 70%;
-    height: 100vh;
+    height: auto;
     margin: 0 auto;
     overflow: hidden;
   }
   
+  .bottom{
+    margin-top:70px;
+    z-index: -999;
+  }
+
   .kitchen-image {
     width: 100%;
     height: 100%;
     object-fit: cover;
     display: block;
+    z-index: -997;
   }
   
   .kitchen-overlay {
+    z-index: 999;
     position: absolute;
-    top: 0;
+    margin-top: 0px;
     left: 0;
     width: 100%;
     height: 100%;
@@ -46,10 +93,11 @@
     align-items: center;
     text-align: center;
     padding: 2rem;
-    background: rgba(0, 0, 0, 0.3);
+   
   }
   
   .subtitle {
+    z-index: 998;
     font-size: 1.2rem;
     font-weight: 300;
     margin-bottom: 1rem;
@@ -59,6 +107,7 @@
   }
   
   .title {
+    z-index: 998;
     font-size: 3.5rem;
     font-weight: 300;
     line-height: 1;
@@ -69,6 +118,7 @@
   }
   
   .arrow-button {
+    z-index: 998;
     position: absolute;
     bottom: 20%;
     left: 50%;
@@ -94,26 +144,7 @@
     font-size: 1.5rem;
   }
   
-  /* Section specific styling */
-  #section1 {
-    background-color: #333;
-  }
-  
-  #section2 {
-    background-color: #3a3a3a;
-  }
-  
-  #section3 {
-    background-color: #444;
-  }
-  
-  #section4 {
-    background-color: #2a2a2a;
-  }
-  
-  #section5 {
-    background-color: #222;
-  }
+
   
   @media (max-width: 1024px) {
     .kitchen-section {
@@ -127,7 +158,7 @@
   @media (max-width: 768px) {
     .kitchen-section {
       width: 95%;
-      height: 80vh;
+      height: auto;
     }
     .title {
       font-size: 2.5rem;
@@ -136,7 +167,7 @@
   
   @media (max-width: 480px) {
     .kitchen-section {
-      height: 60vh;
+      height: 40vh;
     }
     .subtitle {
       font-size: 1rem;
@@ -147,5 +178,9 @@
     .arrow-button {
       width: 40px;
       height: 40px;
+    }
+    .role {
+      font-size: 13px;
+    
     }
   }

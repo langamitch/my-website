@@ -8,7 +8,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
   <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="home.css"/>
-  <link rel="stylesheet" href="style.css"/>
+  
  
 </head>
 <div class="top">
@@ -27,8 +27,9 @@
    </div>
 
 <body>
+  <div class="bottom">
   <div id="section1" class="kitchen-section">
-    <img src="images/kitchen" alt="Modern kitchen showroom with sleek cabinets" class="kitchen-image">
+    <img style="z-index: -999;" src="images/kitchen.jpg" alt="Modern kitchen showroom with sleek cabinets" class="kitchen-image">
     <div class="kitchen-overlay">
       <p class="subtitle">Kitchen showroom</p>
       <h1 class="title">Scavolini sthlm</h1>
@@ -39,7 +40,7 @@
   </div>
   
   <div id="section2" class="kitchen-section">
-    <img src="/api/placeholder/800/500" alt="Minimalist kitchen design" class="kitchen-image">
+    <img src="images/kitchen.jpg" alt="Minimalist kitchen design" class="kitchen-image">
     <div class="kitchen-overlay">
       <p class="subtitle">Premium Design</p>
       <h1 class="title">Modern Elegance</h1>
@@ -50,7 +51,7 @@
   </div>
   
   <div id="section3" class="kitchen-section">
-    <img src="/api/placeholder/800/500" alt="Luxury kitchen materials" class="kitchen-image">
+    <img src="images/kitchen.jpg" alt="Luxury kitchen materials" class="kitchen-image">
     <div class="kitchen-overlay">
       <p class="subtitle">Finest Materials</p>
       <h1 class="title">Crafted Perfection</h1>
@@ -81,6 +82,7 @@
       </div>
     </div>
   </div>
+</div>
 
   <script>
     document.addEventListener('DOMContentLoaded', function() {
