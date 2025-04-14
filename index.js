@@ -23,8 +23,4 @@ gsap.registerPlugin(ScrollTrigger);
   });
 
   
-  const monthElement = document.getElementById("dynamic-month");
-  const now = new Date();
-  const shortMonth = now.toLocaleString('default', { month: 'short' }); // "Apr"
-  const year = now.getFullYear();
-  monthElement.textContent = `${shortMonth} ${year}`;
+ 
