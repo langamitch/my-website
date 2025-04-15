@@ -155,6 +155,9 @@
       margin-left: -10px;
       max-width: 100%;
     }
+    .name-role{
+      margin-left:10px;
+    }
     .name-role .role {
       font-size: 10px;
     
@@ -294,3 +297,28 @@
 
      
     }
+
+    /* bottom fixed */
+
+    
+  .bottom-corner {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    color: white;
+    font-family: 'Inter', sans-serif;
+    font-size: 13px;
+    text-align: left;
+    z-index: 9999;
+  }
+  
+  .label-name {
+    font-weight: 500;
+    font-size: 13px;
+  }
+  
+  .current-month {
+    font-size: 13px;
+  }
+
+    

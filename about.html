@@ -134,6 +134,14 @@
   </main>
 
   <script src="index.js"></script>
+  <script>
+   const monthElement = document.getElementById("dynamic-month");
+    const now = new Date();
+    const shortMonth = now.toLocaleString('default', { month: 'short' }); // "Apr"
+    const year = now.getFullYear();
+    monthElement.textContent = `${shortMonth} ${year}`;
+    
+    </script>
     <footer class="site-footer">
       <p class="footer-bottom-text">
         © 2025 Wandile Langa. All rights reserved. Created by <a href="https://spaces.dev" target="_blank">Spaces Tech Studio</a>.
