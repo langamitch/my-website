@@ -155,10 +155,10 @@
       margin-left: -10px;
       max-width: 100%;
     }
-    .role p{
-      font-size:8px;
+    .name-role .role {
+      font-size: 10px;
+    
     }
-  
     .image-container  {
       display: none;
     }
