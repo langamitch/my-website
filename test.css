@@ -15,9 +15,11 @@
     }
     body {
       font-family: 'Inter', sans-serif;
-      background: #fff;
+      background: #ebebeb;
       color: #000;
       padding: 1.3rem;
+      width:100%;
+      overflow-x: hidden;
       
     }
     /* For most browsers */
@@ -67,23 +69,11 @@ body {
       transition: all 0.3s ease-in-out;
     }
 
-  @media (min-width: 768px) {
-    .content {
-      flex-direction: row; /* Side by side on larger screens */
-      align-items: flex-start;
-    }
-  
-    .description {
-      flex: 1;
-      max-width: 60%;
-    }
-  
-    
-  }
+ 
   
   
   /* ✅ Mobile Styles */
-  @media (max-width: 768px) {
+  @media (max-width: 767px) {
     .content {
       
       align-items: left;
@@ -99,10 +89,9 @@ body {
     }
     .info-grid {
         display: grid;
-        width:100vw;
-       
-        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-        gap: 95rem;
+        width: 100vw;
+        margin: 1em auto;
+        grid-template-columns: repeat(auto-fit, minmax(10px, 1fr));
         font-size: 13px;
         align-items: center;
         justify-content: center;
@@ -130,7 +119,7 @@ body {
 .container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 2rem 1rem;
+  padding: 0rem rem;
   padding-top:100px;
 }
 
@@ -147,7 +136,7 @@ body {
 
 .title {
   font-family: 'wandile', sans-serif;
-  font-size: 12vw;
+  font-size: 13vw;
   font-weight: normal;
 }
 
@@ -156,14 +145,21 @@ body {
     font-size: 9vw;
   }
   
+.info-grid {
+  padding-left: 8vw;
+  padding-right: 8vw;
+  overflow:hidden;
+ 
+}
 }
 
 .info-grid {
+  overflow:hidden;
     display: grid;
-    width: 40vw;
+    width: 100vw;
     margin: 3em auto; /* Centers the grid horizontally */
     grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-    gap: 1.5rem;
+    gap: -1.5rem;
     font-size: 13px;
     align-items: center;
     justify-content: center;
@@ -174,7 +170,7 @@ body {
   }
   
 .info-item p {
-  margin: 0.25rem 0;
+  margin: 0.5rem 0;
 }
 
 .info-item .label {
@@ -197,5 +193,6 @@ body {
   width: 100%;
   max-height: 80vh;
   object-fit: cover;
-  display: block;
+  padding: 1.3rem;
+  
 }
