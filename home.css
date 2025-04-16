@@ -127,25 +127,32 @@
     transform: translateX(-50%);
     width: 50px;
     height: 50px;
-    background-color: #000;
+    background-color: #fff;
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
     cursor: pointer;
     opacity: 0;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.4s ease;
+    transition: 0.4s ease-in-out;
   }
   
   .arrow-button:hover {
-    background-color: #bebebe;
+    background-color: #000;
   }
   
   .arrow-icon {
     color: white;
     font-size: 1.5rem;
+    transition: 0.4s ease-in-out;
   }
   .arrow-icon a {
+    color:#000;
+    transition: 0.4s ease-in-out;
+    text-decoration:none;
+  }
+  .arrow-icon a:hover {
     color:#fff;
     text-decoration:none;
   }
