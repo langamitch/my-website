@@ -6,6 +6,7 @@
   <title>Wandile Langa - Interaction Designer & Creative Developer</title>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
   <link rel="stylesheet" href="test.css"/>
 </head>
 <body>
@@ -63,11 +64,43 @@
  
   <section class="container head">
     <p class="subtitle">Next Project</p>
-    <p class="subtitle">Photographer Portfolio</p>
+    
     <h1 class="title">Scavolini sthlm</h1>
+    <div class="section-box">
+      
+      <div class="arrow-circle">
+        <svg class="arrow-icon" fill="none" stroke="currentColor" stroke-width="1" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4m0 0l-2-2m2 2l2-2" />
+        </svg>
+      </div>
+    </div>
 
   </section>
 
-  
+  <script>
+    const arrow = document.querySelector('.arrow-icon');
+    const box = document.querySelector('.section-box');
+
+    box.addEventListener('mousemove', (e) => {
+      const rect = box.getBoundingClientRect();
+      const centerX = rect.left + rect.width / 2;
+      const centerY = rect.top + rect.height / 2;
+      const angle = Math.atan2(e.clientY - centerY, e.clientX - centerX) * (120 / Math.PI);
+
+      gsap.to(arrow, {
+        rotate: angle + 10, // +90 to adjust default arrow direction
+        duration: 0.4,
+        ease: "power2.out"
+      });
+    });
+
+    box.addEventListener('mouseleave', () => {
+      gsap.to(arrow, {
+        rotate: 0,
+        duration: 0.5,
+        ease: "power2.out"
+      });
+    });
+  </script>
 </body>
 </html>
