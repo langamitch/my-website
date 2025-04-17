@@ -224,3 +224,149 @@
     font-size: 13px;
   }
   
+  
+    .bottom {
+      background-color: #f9f6f4;
+      padding: 40px;
+      font-family: 'Inter', serif;
+      color: #555;
+      border-radius: 6px;
+      margin-bottom: 100px;
+    }
+    
+    .bottom-content {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+    
+    .bottom-left {
+      max-width: 400px;
+    }
+    
+    .font-button {
+      
+      color: white;
+      border: none;
+      padding: 10px 14px;
+      border-radius: 6px;
+      margin-bottom: 20px;
+      cursor: pointer;
+    }
+    
+    .schedule-btn {
+      font-size: 10px;
+      display: inline-flex;
+      align-items: center;
+      background: #f1edeb;
+      padding: 22px 20px;
+      border-radius: 30px;
+      border: none;
+      font-weight: 700;
+      margin-bottom: 30px;
+      text-decoration:none;
+      cursor: pointer;
+      transition: all 0.3s ease-in-out;
+    }
+    .bottom a{
+      color:#000;
+      text-decoration:none;
+    }
+    .schedule-btn .dot {
+      width: 10px;
+      height: 10px;
+      background-color: teal;
+      border-radius: 50%;
+      margin-right: 10px;
+    }
+    .schedule-btn:hover {
+      background-color: #000;
+      color: #fff;
+    }
+
+    .bottom-right {
+      max-width: 400px;
+    }
+
+    .bottom-right h3 {
+      font-size: 1.5rem;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+
+    .bottom-right p {
+      font-size: 1rem;
+      margin-bottom: 20px;
+    }
+
+    .bottom-right ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    
+    .section {
+      margin-bottom: 20px;
+    }
+    
+    .section h4 {
+      margin-bottom: 20px;
+      font-size: 0.75rem;
+      font-weight: bold;
+      text-transform: uppercase;
+      color: #222;
+    }
+    
+    .section p {
+      font-size: 1rem;
+      color: #777;
+      margin-top: 5px;
+    }
+    
+    .bottom-right img {
+      max-height: 300px;
+    }
+    .copyright{
+      margin-top: 100px;
+      font-size: 12px;
+      font-weight: 700;
+    }
+    @media (max-width: 768px) {
+      .bottom-content {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    
+      .bottom-right {
+        margin-top: 30px;
+      }
+      .bottom-right img {
+       display: none;
+      }
+    }
+    
+    #time-location p {
+      font-size: 13px;
+      font-weight:600;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      
+    }
+    
+    #datetime-wrapper {
+      display: inline-block;
+      width: 140px; /* Fixed width to prevent shifting */
+      text-align: left;
+    }
+    
+    .divider-dot {
+      width: 6px;
+      height: 6px;
+      background-color: #555;
+      border-radius: 50%;
+      display: inline-block;
+    }
+    
+    

@@ -129,18 +129,80 @@
         
       </ul>
     </section>
-    <div class="bottom-corner">
-      <div class="label-name">Available for Work <br> Wandile - Interaction Designer & Creative Developer</div>
-      <div class="current-month" id="dynamic-month"></div>
-    </div>
+    
   </main>
+  <div class="bottom">
+    <div class="bottom-content">
+      <div class="bottom-left">
+        
+        <a href="https://calendar.app.google/5EZvNuGQZWTHsjuW7" 
+   target="_blank" 
+   rel="noopener noreferrer" 
+   class="schedule-btn">
+  <span class="dot"></span>
+  SCHEDULE A CALL
+</a>
 
+        
+  
+        <div class="section">
+          <h4>ENQUIRIES</h4>
+          <p>hi@space.studio</p>
+        </div>
+  
+        
+  
+        <div class="section">
+          <h4>NEWSLETTER</h4>
+          <p>Monthly inspiration and news</p>
+        </div>
+
+        <div class="section" id="time-location">
+          <h4>TIME & LOCATION</h4>
+          <p><span id="location">Detecting Location</span> <span class="divider-dot"></span> <span id="datetime">Loading</span></p>
+        </div>
+        
+  
+        <p class="copyright">© 2024–2025 Wandile Langa. All rights reserved. </p>
+      </div>
+  
+      <div class="bottom-right">
+        <!-- Illustration area -->
+        <img src="images/illustration.jpg" alt="Teamwork Illustration" />
+      </div>
+    </div>
+  </div>
+  
+  <script>
+    function updateClock() {
+      const now = new Date();
+      const day = now.toLocaleDateString('en-US', { weekday: 'short' }); // e.g., Mon
+      const time = now.toLocaleTimeString(); // hh:mm:ss
+      document.getElementById("datetime").textContent = `${day} ${time}`;
+    }
+  
+    setInterval(updateClock, 1000);
+    updateClock();
+  
+    if (navigator.geolocation) {
+      navigator.geolocation.getCurrentPosition(
+        async (position) => {
+          const { latitude, longitude } = position.coords;
+          const res = await fetch(`https://nominatim.openstreetmap.org/reverse?format=json&lat=${latitude}&lon=${longitude}`);
+          const data = await res.json();
+          const place = data.address.city || data.address.town || data.address.village || data.address.state || "your area";
+          document.getElementById("location").textContent = place;
+        },
+        () => {
+          document.getElementById("location").textContent = "Location unavailable";
+        }
+      );
+    } else {
+      document.getElementById("location").textContent = "Geolocation not supported";
+    }
+  </script>
   <script src="index.js"></script>
-    <footer class="site-footer">
-      <p class="footer-bottom-text">
-        © 2025 Wandile Langa. All rights reserved. Created by <a href="https://spaces.dev" target="_blank">Spaces Tech Studio</a>.
-      </p>
-    </footer>
+    
     
   </main>
 
