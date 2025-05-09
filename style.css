@@ -159,6 +159,9 @@
       font-size: 10px;
     
     }
+    .nav a {
+      font-weight: 400;
+    }
     .image-container  {
       display: none;
     }
@@ -437,5 +440,29 @@
       border-radius: 50%;
       display: inline-block;
     }
-    
+    @media (max-width: 480px) {
+      .kitchen-section {
+        height: 35vh;
+      }
+      .subtitle {
+        font-size: 0.8rem;
+        font-weight:600;
+      }
+      .title {
+        font-size: 3rem;
+      }
+      .arrow-button {
+        width: 40px;
+        height: 40px;
+        margin-top:15px;
+      }
+      .name-role .role {
+        font-size: 10px;
+      
+      }
+      .nav{
+        margin-right:-30px;
+      }
+      
+    }
     

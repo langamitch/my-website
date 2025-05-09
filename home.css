@@ -198,6 +198,9 @@
       font-size: 10px;
     
     }
+    .nav a {
+      font-weight: 400;
+    }
     .nav{
       margin-right:-30px;
     }
