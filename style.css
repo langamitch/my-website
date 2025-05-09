@@ -32,6 +32,7 @@
     position: fixed;
     width:100%;
     padding-right: 70px;
+    z-index: 999;
   }
   .name-role p {
     
@@ -164,9 +165,7 @@
       
       padding: 10px;
     }
-    .top {
-      padding-right: 30px;
-    }
+
   }
   
 
