@@ -3,401 +3,190 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Wandile Langa - Interaction Designer & Creative Developer</title>
+  <title>Wandile Langa - Interaction Designer & Creative Developer | Portfolio</title>
+  
+  <!-- Favicon -->
   <link rel="icon" href="images/logo.png" type="image/jpeg">
-    <!-- Meta Description -->
-    <meta name="description" content="Learn more about Spaces DevTec, our mission, values, and how we empower businesses with innovative technology solutions.">
+  <link rel="apple-touch-icon" href="images/logo.png">
   
-    <!-- Meta Keywords -->
-    <meta name="keywords" content="Spaces DevTec, about us, technology solutions, innovation, business growth, mission, values">
-    
-    <!-- Meta Author -->
-    <meta name="author" content="Spaces DevTec">
-    
-    <!-- Open Graph Metadata (for social media) -->
-    <meta property="og:title" content="About Us - Spaces DevTec">
-    <meta property="og:description" content="Discover how Spaces DevTec helps businesses thrive with cutting-edge technology and a commitment to innovation.">
-    <meta property="og:image" content="images/logo.jpg"> <!-- Refers to the image in the 'images' folder -->
-    <meta property="og:url" content="https://spacesdevtec.netlify.app/about">
-    <meta property="og:type" content="website">
-    
-    <!-- Twitter Card Metadata -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="About Us - Spaces DevTec">
-    <meta name="twitter:description" content="Explore Spaces DevTec's journey and how we empower businesses with innovative solutions.">
-    <meta name="twitter:image" content="images/logo.jpg"> 
+  <!-- Meta Tags -->
+  <meta name="description" content="Wandile Langa - Award-winning Interaction Designer & Creative Developer specializing in innovative digital experiences, UI/UX design, and creative development.">
+  <meta name="keywords" content="Wandile Langa, Interaction Designer, Creative Developer, UI/UX Design, Digital Experience, Portfolio, Creative Development, Design Studio">
+  <meta name="author" content="Wandile Langa">
+  <meta name="robots" content="index, follow">
+  <meta name="language" content="English">
+  <meta name="revisit-after" content="7 days">
+  <meta name="generator" content="Custom Portfolio">
   
+  <!-- Open Graph Metadata -->
+  <meta property="og:title" content="Wandile Langa - Interaction Designer & Creative Developer">
+  <meta property="og:description" content="Explore the portfolio of Wandile Langa, an award-winning Interaction Designer & Creative Developer specializing in innovative digital experiences.">
+  <meta property="og:image" content="images/logo.jpg">
+  <meta property="og:url" content="https://spacesdevtec.netlify.app">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Wandile Langa Portfolio">
+  <meta property="og:locale" content="en_US">
   
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
-  <script src="https://unpkg.com/gsap@3/dist/gsap.min.js"></script>
-<script src="https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js"></script>
-<script>
-  !function(t,e){var o,n,p,r;e._SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.crossOrigin="anonymous",p.async=!0,p.src=s.api_host.replace(".i.posthog.com","-assets.i.posthog.com")+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="init capture register register_once register_for_session unregister unregister_for_session getFeatureFlag getFeatureFlagPayload isFeatureEnabled reloadFeatureFlags updateEarlyAccessFeatureEnrollment getEarlyAccessFeatures on onFeatureFlags onSurveysLoaded onSessionId getSurveys getActiveMatchingSurveys renderSurvey canRenderSurvey identify setPersonProperties group resetGroups setPersonPropertiesForFlags resetPersonPropertiesForFlags setGroupPropertiesForFlags resetGroupPropertiesForFlags reset get_distinct_id getGroups get_session_id get_session_replay_url alias set_config startSessionRecording stopSessionRecording sessionRecordingStarted captureException loadToolbar get_property getSessionProperty createPersonProfile opt_in_capturing opt_out_capturing has_opted_in_capturing has_opted_out_capturing clear_opt_in_out_capturing debug getPageViewId captureTraceFeedback captureTraceMetric".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e._SV=1)}(document,window.posthog||[]);
-  posthog.init('phc_MCPNvucyZMaiChHcd30UKTLZsi9koUb0t9fR66QF9KV', {
+  <!-- Twitter Card Metadata -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Wandile Langa - Interaction Designer & Creative Developer">
+  <meta name="twitter:description" content="Explore the portfolio of Wandile Langa, an award-winning Interaction Designer & Creative Developer specializing in innovative digital experiences.">
+  <meta name="twitter:image" content="images/logo.jpg">
+  <meta name="twitter:creator" content="@wandilelanga">
+  
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://spacesdevtec.netlify.app">
+  
+  <!-- External Libraries -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" defer></script>
+  
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Styles -->
+  <link rel="stylesheet" href="styles.css">
+  
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Wandile Langa",
+    "jobTitle": "Interaction Designer & Creative Developer",
+    "url": "https://spacesdevtec.netlify.app",
+    "sameAs": [
+      "https://linkedin.com/in/wandilelanga",
+      "https://twitter.com/wandilelanga",
+      "https://github.com/wandilelanga"
+    ],
+    "worksFor": {
+      "@type": "Organization",
+      "name": "Spaces DevTec"
+    },
+    "description": "Award-winning Interaction Designer & Creative Developer specializing in innovative digital experiences."
+  }
+  </script>
+  
+  <!-- Analytics -->
+  <script>
+    !function(t,e){var o,n,p,r;e._SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.crossOrigin="anonymous",p.async=!0,p.src=s.api_host.replace(".i.posthog.com","-assets.i.posthog.com")+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="init capture register register_once register_for_session unregister unregister_for_session getFeatureFlag getFeatureFlagPayload isFeatureEnabled reloadFeatureFlags updateEarlyAccessFeatureEnrollment getEarlyAccessFeatures on onFeatureFlags onSurveysLoaded onSessionId getSurveys getActiveMatchingSurveys renderSurvey canRenderSurvey identify setPersonProperties group resetGroups setPersonPropertiesForFlags resetPersonPropertiesForFlags setGroupPropertiesForFlags resetGroupPropertiesForFlags reset get_distinct_id getGroups get_session_id get_session_replay_url alias set_config startSessionRecording stopSessionRecording sessionRecordingStarted captureException loadToolbar get_property getSessionProperty createPersonProfile opt_in_capturing opt_out_capturing has_opted_in_capturing has_opted_out_capturing clear_opt_in_out_capturing debug getPageViewId captureTraceFeedback captureTraceMetric".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e._SV=1)}(document,window.posthog||[]);
+    posthog.init('phc_MCPNvucyZMaiChHcd30UKTLZsi9koUb0t9fR66QF9KV', {
       api_host: 'https://us.i.posthog.com',
-      person_profiles: 'identified_only', // or 'always' to create profiles for anonymous users as well
-  })
-</script>
-
-<script type="text/javascript">
-(function(c,l,a,r,i,t,y){
-    c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-    t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-    y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-})(window, document, "clarity", "script", "r3eijhckpi");
-</script>
-  <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="home.css"/>
-  <link rel="preload" href="home.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-<noscript><link rel="stylesheet" href="home.css"></noscript>
-
+      person_profiles: 'identified_only'
+    });
+  </script>
   
- 
+  <script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+      c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+      t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+      y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "r3eijhckpi");
+  </script>
 </head>
 
-
 <body>
-  <div class="top">
-
- 
-    <header class="header">
-      <div class="name-role">
-        <p class="name">Wandile Langa</p>
-        <p class="role">Interaction Designer & Creative Developer</p>
+  <!-- Header -->
+  <header class="header" role="banner">
+    <div class="name-role">
+      <h1 class="name">Wandile Langa</h1>
+      <p class="role">Interaction Designer & Creative Developer</p>
+    </div>
+    <nav class="nav" role="navigation" aria-label="Main navigation">
+      <a href="#" aria-current="page">Index</a>
+      <a href="about.html">About</a>
+    </nav>
+  </header>
+  
+  <!-- Main Content -->
+  <main role="main">
+    <!-- Project Sections -->
+    <section class="kitchen-section" aria-labelledby="project1-title">
+      <img src="images/img1.jpg" alt="Art Direction project by Giannantonio De Maldé" class="kitchen-image" loading="lazy">
+      <div class="kitchen-overlay">
+        <p class="subtitle">Art Direction</p>
+        <h2 id="project1-title" class="title">Giannantonio De Maldé</h2>
+        <div class="arrow-button">
+          <span class="arrow-icon"><a href="test.html" aria-label="View Giannantonio De Maldé project">→</a></span>
+        </div>
       </div>
-      <nav class="nav">
-        <a href="#">Index</a>
-        <a href="about.html">About</a>
-      </nav>
-    </header>
-   </div>
-   
-  <div id="section1" class="kitchen-section" style="position: relative; margin-top:120px;" >
-    <img src="images/img1.jpg" width="800" height="600" loading="lazy" fetchpriority="high" alt="Modern kitchen showroom with sleek cabinets" class="kitchen-image" style="width: 100%; height: auto; display: block;">
-    
-    <div class="kitchen-overlay" style="
-        position: absolute;
-        top: 0;
-       
-        left: 0;
-        width: 100%;
-        height: 100%;
-        z-index: 2;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        background: rgba(0, 0, 0, 0.195); /* Optional for semi-transparent overlay */
-        color: white;
-      ">
-      <p class="subtitle">Art Direction</p>
-      <h1 class="title">Giannantonio De Maldé</h1>
-      <div class="arrow-button">
-        <span class="arrow-icon"><a href="test.html">→</a></span>
+    </section>
+
+    <section class="kitchen-section" aria-labelledby="project2-title">
+      <img src="images/kitchen2.jpg" alt="Kitchen showroom project by Scavolini sthlm" class="kitchen-image" loading="lazy">
+      <div class="kitchen-overlay">
+        <p class="subtitle">Kitchen showroom</p>
+        <h2 id="project2-title" class="title">Scavolini sthlm</h2>
+        <div class="arrow-button">
+          <span class="arrow-icon"><a href="test.html" aria-label="View Scavolini sthlm project">→</a></span>
+        </div>
+      </div>
+    </section>
+
+    <section class="kitchen-section" aria-labelledby="project3-title">
+      <img src="images/photo1.jpg" alt="Photographer portfolio project by Ulla Shinami" class="kitchen-image" loading="lazy">
+      <div class="kitchen-overlay">
+        <p class="subtitle">Photographer Portfolio</p>
+        <h2 id="project3-title" class="title">Ulla Shinami</h2>
+        <div class="arrow-button">
+          <span class="arrow-icon"><a href="outofservice.html" aria-label="View Ulla Shinami project">→</a></span>
+        </div>
+      </div>
+    </section>
+
+    <section class="kitchen-section" aria-labelledby="project4-title">
+      <img src="images/photography (4).jpg" alt="Simplicity studio project by Brock Wagner" class="kitchen-image" loading="lazy">
+      <div class="kitchen-overlay">
+        <p class="subtitle">Simplicity studio</p>
+        <h2 id="project4-title" class="title">Brock Wagner</h2>
+        <div class="arrow-button">
+          <span class="arrow-icon"><a href="outofservice.html" aria-label="View Brock Wagner project">→</a></span>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Bottom Corner -->
+  <aside class="bottom-corner" aria-label="Contact information">
+    <div class="label-name">Available for Work <br> Wandile - Interaction Designer & Creative Developer</div>
+    <div class="current-month" id="dynamic-month"></div>
+  </aside>
+
+  <!-- Footer -->
+  <footer class="bottom" role="contentinfo">
+    <div class="bottom-content">
+      <div class="bottom-left">
+        <a href="https://calendar.app.google/5EZvNuGQZWTHsjuW7" target="_blank" rel="noopener noreferrer" class="schedule-btn" aria-label="Schedule a call">
+          <span class="dot"></span>
+          SCHEDULE A CALL
+        </a>
+
+        <div class="section">
+          <h3>ENQUIRIES</h3>
+          <p><a href="mailto:hi@space.studio">hi@space.studio</a></p>
+        </div>
+
+        <div class="section">
+          <h3>NEWSLETTER</h3>
+          <p>Monthly inspiration and news</p>
+        </div>
+
+        <div class="section" id="time-location">
+          <h3>TIME & LOCATION</h3>
+          <p><span id="location">Detecting Location</span> <span class="divider-dot"></span> <span id="datetime">Loading</span></p>
+        </div>
+
+        <p class="copyright">©2025 Wandile Langa. All rights reserved.</p>
+      </div>
+
+      <div class="bottom-right">
+        <img src="images/illustration.jpg" alt="Teamwork Illustration" loading="lazy">
       </div>
     </div>
-  </div>
-  
-  
-  <div id="section1" class="kitchen-section" style="position: relative; margin-top:120px;" >
-    <img src="images/kitchen2.jpg" width="800" height="600" loading="lazy" fetchpriority="high" alt="Modern kitchen showroom with sleek cabinets" class="kitchen-image" style="width: 100%; height: auto; display: block;">
-    
-    <div class="kitchen-overlay" style="
-        position: absolute;
-        top: 0;
-       
-        left: 0;
-        width: 100%;
-        height: 100%;
-        z-index: 2;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        background: rgba(0, 0, 0, 0.195); /* Optional for semi-transparent overlay */
-        color: white;
-      ">
-      <p class="subtitle">Kitchen showroom</p>
-      <h1 class="title">Scavolini sthlm</h1>
-      <div class="arrow-button">
-        <span class="arrow-icon"><a href="test.html">→</a></span>
-      </div>
-    </div>
-  </div>
-  
-  
-  <div id="section1" class="kitchen-section" style="position: relative;margin-bottom: 90px;">
-    <img src="images/photo1.jpg" width="800" height="600" loading="lazy" fetchpriority="high" alt="Modern kitchen showroom with sleek cabinets" class="kitchen-image" style="width: 100%; height: auto; display: block;"
-    >
-    
-    <div class="kitchen-overlay" style="
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        z-index: 2;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        background: rgba(0, 0, 0, 0.4); /* Optional for semi-transparent overlay */
-        color: white;
-      ">
-      <p class="subtitle">Photographer Portfolio</p>
-      <h1 class="title">Ulla Shinami</h1>
-      <div class="arrow-button">
-        <span class="arrow-icon"><a href="outofservice.html">→</a></span>
-      </div>
-    </div>
-  </div>
-  
-  
-  <div id="section1" class="kitchen-section" style="position: relative;">
-    <img src="images/photography (4).jpg" width="800" height="600" loading="lazy" fetchpriority="high" alt="Modern kitchen showroom with sleek cabinets" class="kitchen-image" style="width: 100%; height: auto; display: block;">
-    
-    <div class="kitchen-overlay" style="
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        z-index: 2;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        background: rgba(0, 0, 0, 0.4); /* Optional for semi-transparent overlay */
-        color: white;
-      ">
-      <p class="subtitle">Simplicity studio </p>
-      <h1 class="title">Brock Wagner</h1>
-      <div class="arrow-button">
-        <span class="arrow-icon"><a href="outofservice.html">→</a></span>
-      </div>
-    </div>
-  </div>
- <!-- <div id="section1" class="kitchen-section" style="position: relative;">
-    <img src="images/photo4.jpg" width="800" height="600" loading="lazy" alt="Modern kitchen showroom with sleek cabinets" class="kitchen-image" style="width: 100%; height: auto; display: block;">
-    
-    <div class="kitchen-overlay" style="
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        z-index: 2;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        background: rgba(0, 0, 0, 0.4); /* Optional for semi-transparent overlay */
-        color: white;
-      ">
-      <p class="subtitle">Simplicity studio </p>
-      <h1 class="title">Simpicity </h1>
-      <div class="arrow-button">
-        <span class="arrow-icon"><a href="outofservice.html">→</a></span>
-      </div>
-    </div>
-  </div>
-  
-  
-  <div id="section1" class="kitchen-section" style="position: relative;">
-    <img src="images/photo3.jpg" width="800" height="600" loading="lazy" alt="Modern kitchen showroom with sleek cabinets" class="kitchen-image" style="width: 100%; height: auto; display: block;">
-    
-    <div class="kitchen-overlay" style="
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        z-index: 2;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        background: rgba(0, 0, 0, 0.4); /* Optional for semi-transparent overlay */
-        color: white;
-      ">
-      <p class="subtitle">myth-inspired design</p>
-      <h1 class="title">Yverra</h1>
-      <div class="arrow-button">
-        <span class="arrow-icon"><a href="outofservice.html">→</a></span>
-      </div>
-    </div>
-  </div>
-  
-  
-  <div id="section1" class="kitchen-section" style="position: relative;margin-bottom:50px;">
-    <img src="images/photo6.jpg" width="800" height="600" loading="lazy" alt="Modern kitchen showroom with sleek cabinets" class="kitchen-image" style="width: 100%; height: auto; display: block;">
-    
-    <div class="kitchen-overlay" style="
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        z-index: 2;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        background: rgba(0, 0, 0, 0.4); /* Optional for semi-transparent overlay */
-        color: white;
-      ">
-      <p class="subtitle">Your Vision</p>
-      <h1 class="title">Korthess</h1>
-      <div class="arrow-button">
-        <span class="arrow-icon"><a href="outofservice.html">→</a></span>
-      </div>
-    </div>
-  </div>
-</div>-->
-<script src="index.js"></script>
-<div class="bottom-corner">
-  <div class="label-name">Available for Work <br> Wandile - Interaction Designer & Creative Developer</div>
-  <div class="current-month" id="dynamic-month"></div>
-</div>
-<div class="bottom">
-  <div class="bottom-content">
-    <div class="bottom-left">
-      
-      <a href="https://calendar.app.google/5EZvNuGQZWTHsjuW7" 
- target="_blank" 
- rel="noopener noreferrer" 
- class="schedule-btn">
-<span class="dot"></span>
-SCHEDULE A CALL
-</a>
+  </footer>
 
-      
-
-      <div class="section">
-        <h4>ENQUIRIES</h4>
-        <p>hi@space.studio</p>
-      </div>
-
-      
-
-      <div class="section">
-        <h4>NEWSLETTER</h4>
-        <p>Monthly inspiration and news</p>
-      </div>
-
-      <div class="section" id="time-location">
-        <h4>TIME & LOCATION</h4>
-        <p><span id="location">Detecting Location</span> <span class="divider-dot"></span> <span id="datetime">Loading</span></p>
-      </div>
-      
-
-      <p class="copyright">©2025 Wandile Langa. All rights reserved. </p>
-    </div>
-
-    <div class="bottom-right">
-      <!-- Illustration area -->
-      <img src="images/illustration.jpg" alt="Teamwork Illustration" />
-    </div>
-  </div>
-</div>
-
-<script>
-  function updateClock() {
-    const now = new Date();
-    const day = now.toLocaleDateString('en-US', { weekday: 'short' }); // e.g., Mon
-    const time = now.toLocaleTimeString(); // hh:mm:ss
-    document.getElementById("datetime").textContent = `${day} ${time}`;
-  }
-
-  setInterval(updateClock, 1000);
-  updateClock();
-
-  if (navigator.geolocation) {
-    navigator.geolocation.getCurrentPosition(
-      async (position) => {
-        const { latitude, longitude } = position.coords;
-        const res = await fetch(`https://nominatim.openstreetmap.org/reverse?format=json&lat=${latitude}&lon=${longitude}`);
-        const data = await res.json();
-        const place = data.address.city || data.address.town || data.address.village || data.address.state || "your area";
-        document.getElementById("location").textContent = place;
-      },
-      () => {
-        document.getElementById("location").textContent = "Location unavailable";
-      }
-    );
-  } else {
-    document.getElementById("location").textContent = "Geolocation not supported";
-  }
-</script>
-  <script>
-    document.addEventListener('DOMContentLoaded', function() {
-      // Initialize GSAP ScrollTrigger
-      gsap.registerPlugin(ScrollTrigger);
-      
-      // Select all sections
-      const sections = document.querySelectorAll('.kitchen-section');
-      
-      sections.forEach((section, index) => {
-        // Create animation timeline for each section
-        const tl = gsap.timeline({
-          scrollTrigger: {
-            trigger: section,
-            start: "top 90%",
-            end: "bottom top",
-            toggleActions: "play none none reverse"
-          }
-        });
-        
-        // Add animations to timeline
-        tl.fromTo(section.querySelector('.subtitle'), 
-          { y: 30, opacity: 0 }, 
-          { y: 0, opacity: 1, duration: 0.8, ease: "power2.out" }
-        )
-        .fromTo(section.querySelector('.title'), 
-          { y: 50, opacity: 0 }, 
-          { y: 0, opacity: 1, duration: 1, ease: "power2.out" }, 
-          "-=0.6"
-        )
-        .fromTo(section.querySelector('.arrow-button'), 
-          { opacity: 0, scale: 0.8 }, 
-          { opacity: 1, scale: 1, duration: 0.5, ease: "back.out(1.7)" }, 
-          "-=0.4"
-        );
-        
-        // Add parallax effect to images
-        gsap.to(section.querySelector('.kitchen-image'), {
-          y: 50,
-          ease: "none",
-          scrollTrigger: {
-            trigger: section,
-            start: "top bottom",
-            end: "bottom top",
-            scrub: true
-          }
-        });
-      });
-      
-      // Add hover animation for arrow buttons
-      const arrowButtons = document.querySelectorAll('.arrow-button');
-      
-      arrowButtons.forEach(button => {
-        button.addEventListener('mouseenter', () => {
-          gsap.to(button, { scale: 1.1, duration: 0.3, ease: "power1.out" });
-        });
-        
-        button.addEventListener('mouseleave', () => {
-          gsap.to(button, { scale: 1, duration: 0.3, ease: "power1.out" });
-        });
-      });
-    });
-
-    const monthElement = document.getElementById("dynamic-month");
-  const now = new Date();
-  const shortMonth = now.toLocaleString('default', { month: 'short' }); // "Apr"
-  const year = now.getFullYear();
-  monthElement.textContent = `${shortMonth} ${year}`;
-  
-  </script>
+  <!-- Scripts -->
+  <script src="main.js" defer></script>
 </body>
 </html>
