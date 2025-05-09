@@ -290,7 +290,7 @@ body {
 }
 
 .section p {
-  font-size: 13px;
+  font-size: 11px;
   color: #777;
   margin-top: 5px;
   font-size: normal;
@@ -337,7 +337,7 @@ body {
 .copyright {
   margin-top: 100px;
   font-size: 12px;
-  font-weight: 700;
+  font-weight: 500;
 }
 
 #time-location p {
