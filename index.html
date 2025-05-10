@@ -58,7 +58,6 @@
 
 
 <body>
-   
   <div class="top">
 
  
@@ -258,14 +257,26 @@
 </div>-->
 <script src="index.js"></script>
 <div class="bottom-corner">
+  <!-- Busy Status Icon -->
+<div id="coding-status" style="display:none;">
+  <a href="https://your-live-project-link.com" target="_blank" class="coding-icon">
+    <span class="dot"></span>
+    <span><strong>Busy</strong> · View live changes →</span>
+  </a>
+</div>
+
+<script>
+  // Get current hour in 24-hour format
+  const currentTime = new Date().getTime();
+  const hour = now.getHours();
+
+  // Show icon if time is between 10:00 and 16:00
+  if (hour >= 10 && hour < 16) {
+    document.getElementById("coding-status").style.display = "block";
+  }
+</script>
   <div class="label-name">Available for Work <br> Wandile - Interaction Designer & Creative Developer</div>
   <div class="current-month" id="dynamic-month"></div>
-  <div id="coding-status" style="display: none;">
-    <a id="project-link" href="#" target="_blank" rel="noopener noreferrer">
-       <div id="coding-status">
-           <span >Coding now... <span id="timer" >00 : 00</span></span> 
-      </div>
-   </div>
 </div>
 <div class="bottom">
   <div class="bottom-content">
@@ -308,50 +319,6 @@ SCHEDULE A CALL
     </div>
   </div>
 </div>
-
-<script >
-    
-  const projectURL = "https://github.com/yourproject"; // Optional: set to "" if no link
-  const minutes = 10; // How long the status should be shown
-  const endTimeKey = "codingStatusEndTime";
-
-  // Set a future time if not already set
-  if (!localStorage.getItem(endTimeKey)) {
-    const endTime = new Date().getTime() + minutes * 60 * 1000;
-    localStorage.setItem(endTimeKey, endTime);
-  }
-
-  // Check if still within the time window
-  const now = new Date().getTime();
-  const endTime = parseInt(localStorage.getItem(endTimeKey));
-
-  if (now < endTime) {
-    // Show icon
-    document.getElementById("coding-status").style.display = "block";
-    if (projectURL) {
-      document.getElementById("project-link").href = projectURL;
-    } else {
-      document.getElementById("project-link").removeAttribute("href");
-    }
-
-    // Start countdown
-    let remaining = Math.floor((endTime - now) / 1000);
-    const timerEl = document.getElementById("timer");
-
-    const interval = setInterval(() => {
-      const mins = Math.floor(remaining / 60).toString().padStart(2, '0');
-      const secs = (remaining % 60).toString().padStart(2, '0');
-      timerEl.textContent = ${mins}:${secs};
-      remaining--;
-
-      if (remaining < 0) {
-        clearInterval(interval);
-        document.getElementById("coding-status").style.display = "none";
-        localStorage.removeItem(endTimeKey); // reset status
-      }
-    }, 1000);
-  }
-</script>
 
 <script>
   function updateClock() {
