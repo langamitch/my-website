@@ -374,7 +374,7 @@
     }
     
     .coding-icon {
-      position: fixed;
+      position: reletive;
       left: 20px;
       color: white;
       font-size: 13px;
