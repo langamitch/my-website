@@ -312,12 +312,12 @@ SCHEDULE A CALL
 <script >
     
   const projectURL = "https://github.com/yourproject"; // Optional: set to "" if no link
-  const minutes = 30; // How long the status should be shown
+  const minutes = 10; // How long the status should be shown
   const endTimeKey = "codingStatusEndTime";
 
   // Set a future time if not already set
   if (!localStorage.getItem(endTimeKey)) {
-    const endTime = new Date().getTime() + 10 * 60 * 1000;
+    const endTime = new Date().getTime() + minutes * 60 * 1000;
     localStorage.setItem(endTimeKey, endTime);
   }
 
