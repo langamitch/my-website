@@ -35,7 +35,8 @@
     z-index: 999;
   }
   .name-role p {
-    
+    text-decoration:none;
+    color:white;
     font-weight: 500;
     font-size: 13px;
     font-style: normal;
@@ -56,7 +57,7 @@
   
   .nav a:hover {
     text-decoration: underline;
-    color: rgb(28, 28, 28)
+    color: rgb(28, 28, 28);
     transition: all 0.3s ease-in-out;
   }
 
