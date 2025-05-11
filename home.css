@@ -17,6 +17,7 @@
     font-family: 'Inter', sans-serif;
     background: #000;
     color: #fff;
+    overflow-x: hidden;
     padding: 1.3rem;
   }
   
